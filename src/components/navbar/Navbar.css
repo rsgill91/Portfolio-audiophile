@@ -1,0 +1,135 @@
+.main-wrapper-navbar {
+  width: 100%;
+  background-color: transparent;
+
+  z-index: 1;
+}
+
+.nav-items {
+  display: flex;
+  height: 97px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 15%;
+}
+
+.products-nav {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pop-up-menu {
+  display: none;
+}
+
+.pop-up-menu.open {
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.404);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+.pop-up-section {
+  background-color: var(--white);
+  padding: 5% 0 10% 0;
+  border-radius: 8px;
+  position: hidden;
+}
+.links-nav {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.links-nav :hover {
+  color: var(--darkCopper);
+}
+
+.cart-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: 15%;
+}
+
+.cart-nav :hover {
+  fill: var(--darkCopper);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-items {
+    height: 90px;
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+  }
+
+  .products-nav {
+    display: none;
+  }
+  .logo-nav {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logo-nav {
+    justify-content: center;
+  }
+  .nav-items {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .nav-items {
+    height: 90px;
+  }
+  .hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+  }
+
+  .products-nav {
+    display: none;
+  }
+  .logo-nav {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .logo-nav {
+    justify-content: center;
+  }
+  .nav-items {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pop-up-menu.open {
+    display: none;
+  }
+}

@@ -1,0 +1,201 @@
+.main-wrapper-launches {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  margin-top: 10%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.latest-speakers {
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+  background-image: url("../../assets/img/home/desktop/pattern-circles.svg");
+  background-color: var(--darkCopper);
+  background-repeat: no-repeat;
+  background-position-x: -90px;
+}
+
+.latest-speakers-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.latest-speakers-image img {
+  margin-bottom: -2%;
+  width: 70%;
+  padding-top: 20%;
+}
+
+.latest-speakers-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-latest-speakers {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.last-speakers {
+  width: 100%;
+  display: flex;
+  background-image: url("../../assets/img/home/desktop/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+
+.last-speaker-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0 7.5%;
+  gap: 40px;
+  width: 100%;
+  margin-left: 5%;
+  align-items: flex-start;
+}
+
+.latest-earphones {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.earphones-latest-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.earphones-latest-text {
+  border-radius: 8px;
+  flex: 1;
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: flex-end;
+}
+.about-earphones {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 8%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tablet-latest-earphones {
+  display: none;
+}
+
+.mobile-latest-earphones {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-speakers {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    gap: 20px;
+    background-position-y: -257px;
+    background-position-x: -106px;
+  }
+
+  .latest-speakers-image {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .latest-speakers-image img {
+    width: 30%;
+    padding-top: 10%;
+  }
+
+  .latest-speakers-text {
+    margin-top: 5%;
+  }
+
+  .about-latest-speakers {
+    text-align: center;
+    align-items: center;
+    width: 50%;
+  }
+  .last-speakers {
+    background-image: url("../../assets/img/home/tablet/image-speaker-zx7.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+
+  .last-speaker-text {
+    display: flex;
+    align-items: flex-start;
+    padding: 20% 0 20% 0;
+  }
+
+  .desktop-earphones {
+    display: none;
+  }
+  .mobile-earphones {
+    display: none;
+  }
+
+  .tablet-earphones {
+    display: block;
+  }
+
+  .earphones-latest-image {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .latest-speakers {
+    background-size: cover;
+    background-position-x: -155px;
+    background-position-y: -147px;
+  }
+  .latest-speakers-image img {
+    width: 50%;
+  }
+  .last-speakers {
+    background-image: url("../../assets/img/home/mobile/image-speaker-zx7.jpg");
+    background-size: cover;
+  }
+
+  .last-speaker-text {
+    padding: 20% 0 30% 0;
+  }
+  .latest-earphones {
+    flex-direction: column;
+  }
+
+  .about-earphones {
+    padding: 10% 0 10% 0;
+  }
+
+  .mobile-latest-earphones {
+    display: block;
+  }
+  .tablet-latest-earphones {
+    display: none;
+  }
+
+  .desktop-latest-earphones {
+    display: none;
+  }
+
+  .earphones-latest-image {
+    width: 100%;
+  }
+}

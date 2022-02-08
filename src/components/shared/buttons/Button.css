@@ -1,0 +1,69 @@
+.m-btn-outlined {
+  background-color: transparent;
+  border: 1px solid var(--deepBlack);
+  color: black;
+}
+.m-btn-outlined:hover {
+  background-color: var(--deepBlack);
+  color: white;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.m-btn-black {
+  background-color: var(--deepBlack);
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.m-btn-black:hover {
+  background-color: #4c4c4c;
+  cursor: pointer;
+}
+
+.m-btn-primary {
+  background-color: var(--darkCopper);
+  outline: none;
+  border: none;
+  color: white;
+}
+.m-btn-primary:hover {
+  background-color: var(--lightCopper);
+  cursor: pointer;
+}
+
+.m-btn-sm {
+  height: 48px;
+  width: 60px;
+}
+
+.m-btn-md {
+  height: 48px;
+  width: 160px;
+}
+.m-btn-block {
+  display: block;
+  width: 100%;
+  height: 48px;
+}
+
+.m-btn-link {
+  background-color: transparent;
+  color: var(--deepBlack);
+  opacity: 0.5;
+  border: none;
+  outline: none;
+}
+
+.m-btn-shop {
+  background-color: transparent;
+  color: var(--deepBlack);
+  opacity: 0.5;
+  border: none;
+  outline: none;
+}
+.m-btn-shop :hover {
+  color: var(--darkCopper);
+  cursor: pointer;
+}

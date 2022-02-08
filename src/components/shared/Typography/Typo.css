@@ -1,0 +1,108 @@
+.m-title {
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-size: 56px;
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+}
+.m-title-h6 {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.m-title-h5 {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+.m-title-h4 {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.m-title-h3 {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+.m-title-h2 {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+.overline {
+  font-family: "manrope-regular";
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+}
+
+.overline-copper {
+  font-family: "manrope-regular";
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
+  color: var(--darkCopper);
+}
+
+.subtitle {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.subtitle-opacity {
+  font-family: "manrope-bold";
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+
+.body {
+  font-family: "manrope-medium";
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.body-bold {
+  font-family: "manrope-medium";
+  font-size: 15px;
+  line-height: 25px;
+  text-align: left;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 375px) {
+  .m-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+
+  .m-title-h2 {
+    font-size: 28px;
+    line-height: 38.25px;
+    letter-spacing: 2px;
+  }
+}

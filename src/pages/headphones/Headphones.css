@@ -1,0 +1,21 @@
+.header-headphones {
+  width: 100%;
+  background-color: var(--deepBlack);
+  height: 239px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 375px) {
+  .header-headphones {
+    height: 102px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .header-headphones {
+    height: 102px;
+  }
+}

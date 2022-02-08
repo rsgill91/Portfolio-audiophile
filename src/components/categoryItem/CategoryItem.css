@@ -1,0 +1,142 @@
+.item-product {
+  width: 100%;
+  display: flex;
+  margin-top: 10%;
+  gap: 2%;
+}
+
+.item-image {
+  display: flex;
+  width: 50%;
+}
+
+.item-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.main-wrapper-text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item-new {
+  margin-top: 10%;
+}
+
+.item-name {
+  margin: 20px 0 40px 0;
+}
+
+.item-info {
+  opacity: 0.5;
+  margin-bottom: 40px;
+}
+
+/* This is for desktop , which is in landscape by default */
+@media screen and (min-width: 1200px) {
+  .item-product:nth-child(odd) .main-wrapper-text {
+    align-items: center;
+  }
+  .item-product:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* This is for the middle element on desktop */
+@media screen and (min-width: 992px) and (orientation: landscape) {
+  .item-product:nth-child(even) {
+    flex-direction: coloumn;
+  }
+  .item-product:nth-child(odd) .main-wrapper-text {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) and (orientation: potrait) {
+  .item-product:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* This is for the tablet as standard i.e potrait */
+
+@media only screen and (max-width: 768px) {
+  .item-product {
+    flex-direction: column;
+  }
+
+  .item-image {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .main-wrapper-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  .item-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-new {
+    margin-top: 0;
+  }
+
+  .item-name {
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+}
+
+/* This is for the tablet but landscape */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .item-product {
+    flex-direction: column;
+  }
+
+  .item-image {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .main-wrapper-text {
+    width: 100%;
+    align-items: center;
+  }
+
+  .item-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-new {
+    margin-top: 0;
+  }
+
+  .item-name {
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 15px;
+  }
+}
+
+/* This is for mobile */
+@media only screen and (max-width: 375px) {
+  .item-text {
+    width: 100%;
+  }
+}

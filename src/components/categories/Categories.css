@@ -1,0 +1,73 @@
+.main-category-wrapper {
+  width: 100%;
+  margin-top: 15%;
+}
+
+.product-categories {
+  display: flex;
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  gap: 30px;
+}
+
+.category-type {
+  background-color: var(--lightGray);
+  border-radius: 8px;
+}
+
+.category-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+
+.product-image {
+  width: 50%;
+  margin-top: -15% !important;
+}
+
+.category-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.category-title {
+  width: 100%;
+}
+
+.category-pointer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-pointer::after {
+  content: url("../../assets/img/shared/desktop/icon-arrow-right.svg");
+}
+
+@media only screen and (max-width: 768px) {
+  .product-categories {
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .product-categories {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .product-categories {
+    margin-top: 30%;
+    padding: 10% 0 10% 0;
+    flex-direction: column;
+    gap: 70px;
+  }
+}

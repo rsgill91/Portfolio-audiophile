@@ -1,0 +1,57 @@
+.parent-wrapper-mini {
+  width: 100%;
+}
+
+.mini-categories {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  gap: 10px;
+}
+
+.mini-type {
+  background-color: var(--lightGray);
+  border-radius: 8px;
+}
+
+.mini-type-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+.mini-product {
+  width: 50%;
+  margin-top: -15% !important;
+}
+.mini-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.mini-pointer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mini-pointer::after {
+  content: url("../../assets/img/shared/desktop/icon-arrow-right.svg");
+}
+
+@media only screen and (max-width: 375px) {
+  .mini-categories {
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 20%;
+  }
+
+  .mini-product {
+    width: 40%;
+  }
+}

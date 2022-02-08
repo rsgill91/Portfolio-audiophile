@@ -1,0 +1,13 @@
+.parent-wrapper-info {
+  width: 100%;
+}
+
+.return-button {
+  border: 2px solid green;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0.5;
+  margin: 5% 0 5%;
+  color: var(--deepBlack);
+}

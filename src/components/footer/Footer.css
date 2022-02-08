@@ -1,0 +1,260 @@
+.main-footer-wrapper {
+  width: 100%;
+  background-color: var(--deepBlack);
+  padding-bottom: 2%;
+}
+
+.highlight-section {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.copper-accent {
+  height: 4px;
+  width: 101px;
+  background-color: var(--darkCopper);
+}
+.footer-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  gap: 20px;
+}
+
+.logo-links-section {
+  width: 100%;
+  display: flex;
+}
+
+.logo-footer {
+  width: 50%;
+}
+
+.links-footer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-footer {
+  color: var(--white);
+}
+
+.footer-info {
+  width: 100%;
+  display: flex;
+}
+
+.about-footer {
+  color: var(--white);
+  opacity: 0.5;
+  width: 47%;
+}
+
+.socials-desktop {
+  width: 53%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer-last-item {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+}
+
+.footer-copyright {
+  opacity: 0.5;
+  width: 50%;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.socials-other {
+  display: none !important;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex=end;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-container {
+    padding-bottom: 5%;
+  }
+  .logo-links-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo-footer {
+    width: 100%;
+  }
+
+  .links-footer {
+    width: 50%;
+  }
+  .about-footer {
+    width: 95%;
+  }
+
+  .socials-desktop {
+    display: none !important;
+  }
+
+  .socials-other {
+    display: flex !important;
+  }
+
+  .footer-last-item {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .footer-container {
+    padding-bottom: 10%;
+  }
+  .highlight-section {
+    justify-content: center;
+  }
+
+  .logo-links-section {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .logo-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .links-footer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .about-footer {
+    width: 95%;
+    text-align: center;
+  }
+  .footer-last-item {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials-other {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
+  .footer-container {
+    padding-bottom: 10%;
+  }
+  .highlight-section {
+    justify-content: center;
+  }
+
+  .logo-links-section {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .links-footer {
+    flex-direction: column;
+    width: 100%;
+
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .about-footer {
+    width: 95%;
+    text-align: center;
+  }
+
+  .footer-last-item {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials-other {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer-container {
+    padding-bottom: 5%;
+  }
+  .logo-links-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo-footer {
+    width: 100%;
+  }
+
+  .links-footer {
+    width: 50%;
+  }
+  .about-footer {
+    width: 100%;
+  }
+
+  .socials-desktop {
+    display: none !important;
+  }
+
+  .socials-other {
+    display: flex !important;
+  }
+
+  .footer-last-item {
+    margin-top: 2%;
+  }
+}
