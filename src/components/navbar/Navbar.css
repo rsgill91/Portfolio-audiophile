@@ -1,7 +1,6 @@
 .main-wrapper-navbar {
   width: 100%;
-  background-color: transparent;
-
+  background-color: var(--deepBlack);
   z-index: 1;
 }
 
