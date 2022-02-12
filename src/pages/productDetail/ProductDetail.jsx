@@ -9,11 +9,12 @@ import PreviousButton from "../../components/shared/pageNav/PreviousButton";
 import Button from "../../components/shared/buttons/Button";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import Suggestions from "../../components/suggestions/Suggestions";
+import Counter from "../../components/shared/buttons/counter/Counter";
+import GalleryImages from "../../components/galleryImages/GalleryImages";
 
 function ProductDetail() {
   let { slug } = useParams();
-  const navigator = useNavigate();
-  // const [urlSlug, setUrlSlug] = useState(slug ?? null);
+  // const navigator = useNavigate();
 
   const [selected, setSelected] = useState(null);
 
@@ -63,7 +64,7 @@ function ProductDetail() {
                   <Typo variant="body-opacity">{selected.description}</Typo>
                   <Typo variant="h6">${selected.price}</Typo>
                   <div className="shopping-buttons">
-                    {/* Counter Goes here */}
+                    <Counter />
                     <Button variant="primary" label="add to cart" />
                   </div>
                 </div>
@@ -94,67 +95,7 @@ function ProductDetail() {
                 </div>
               </div>
             </div>
-
-            <div className="tri-picture-gallery">
-              <div className="small-pictures">
-                <div className="first-picture">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcSet={selected.gallery.first.desktop.slice(1)}
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcSet={selected.gallery.first.tablet.slice(1)}
-                    />
-                    <source
-                      media="(min-width: 375px)"
-                      srcSet={selected.gallery.first.mobile.slice(1)}
-                    />
-                    <img src={selected.gallery.first.desktop.slice(1)} alt="" />
-                  </picture>
-                </div>
-                <div className="second-picture">
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcSet={selected.gallery.second.desktop.slice(1)}
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcSet={selected.gallery.second.tablet.slice(1)}
-                    />
-                    <source
-                      media="(min-width: 375px)"
-                      srcSet={selected.gallery.second.mobile.slice(1)}
-                    />
-                    <img
-                      src={selected.gallery.second.desktop.slice(1)}
-                      alt=""
-                    />
-                  </picture>
-                </div>
-              </div>
-
-              <div className="large-pictures">
-                <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcSet={selected.gallery.third.desktop.slice(1)}
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcSet={selected.gallery.third.tablet.slice(1)}
-                  />
-                  <source
-                    media="(min-width: 375px)"
-                    srcSet={selected.gallery.third.mobile.slice(1)}
-                  />
-                  <img src={selected.gallery.third.desktop.slice(1)} alt="" />
-                </picture>
-              </div>
-            </div>
-
+            <GalleryImages gallery={selected.gallery} />
             <Suggestions others={selected.others} />
           </div>
         ) : (
