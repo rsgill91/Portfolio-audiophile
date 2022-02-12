@@ -2,8 +2,9 @@ import React from "react";
 import "./Launches.css";
 import Typo from "../shared/Typography/Typo";
 import Button from "../shared/buttons/Button";
+import { Link } from "react-router-dom";
 
-function Launches() {
+function Launches(props) {
   return (
     <div className="main-wrapper-launches">
       <div className="latest-speakers">
@@ -18,7 +19,9 @@ function Launches() {
               Upgrade to premium speakers that are phenomenally built to deliver
               truly remarkable sound.
             </Typo>
-            <Button variant="black" label="see product" />
+            <Link to="/products/zx9-speaker">
+              <Button variant="black" label="see product" />
+            </Link>
           </div>
         </div>
       </div>
@@ -26,7 +29,9 @@ function Launches() {
       <div className="last-speakers">
         <div className="last-speaker-text">
           <Typo variant="h4">zx7 speaker</Typo>
-          <Button variant="outlined" label="see product" />
+          <Link to="/products/zx7-speaker">
+            <Button variant="outlined" label="see product" />
+          </Link>
         </div>
       </div>
 
@@ -51,7 +56,9 @@ function Launches() {
         <div className="earphones-latest-text">
           <div className="about-earphones">
             <Typo variant="h4">yx1 earphones</Typo>
-            <Button variant="outlined" label="see product" />
+            <Link to="/products/yx1-earphones">
+              <Button variant="outlined" label="see product" />
+            </Link>
           </div>
         </div>
       </div>

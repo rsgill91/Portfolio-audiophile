@@ -28,6 +28,10 @@ function Typo(props) {
         return "body";
       case "body-bold":
         return "body-bold";
+      case "body-opacity":
+        return "body-opacity";
+      case "body-bold-copper":
+        return "body-bold-copper";
 
       default:
         return "";

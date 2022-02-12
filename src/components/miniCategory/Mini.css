@@ -1,41 +1,44 @@
 .parent-wrapper-mini {
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  display: flex;
+  gap: 10px;
 }
 
 .mini-categories {
   width: 100%;
   margin-top: 10%;
-  display: flex;
-  gap: 10px;
 }
 
 .mini-type {
   background-color: var(--lightGray);
   border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .mini-type-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50%;
   width: 100%;
 }
 
 .mini-product {
-  width: 50%;
-  margin-top: -15% !important;
+  width: 60%;
+  margin-top: -25% !important;
 }
+
 .mini-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
   width: 100%;
 }
+
 .mini-pointer {
   display: flex;
   align-items: center;
@@ -55,5 +58,9 @@
 
   .mini-product {
     width: 40%;
+  }
+
+  .parent-wrapper-mini {
+    flex-direction: column;
   }
 }

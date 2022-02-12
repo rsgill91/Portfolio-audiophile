@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../shared/buttons/Button";
 import Typo from "../shared/Typography/Typo";
 import "./CategoryItem.css";
 
 function CategoryItem(props) {
-  let { name, new: isNew, categoryImage, description } = props.data;
+  let { name, new: isNew, categoryImage, description, slug } = props.data;
 
   return (
     <div className="item-product ">
@@ -43,8 +44,9 @@ function CategoryItem(props) {
           <div className="item-info">
             <Typo variant="body">{description}</Typo>
           </div>
-
-          <Button variant="primary" label=" SEE PRODUCT" />
+          <Link to={`/products/${slug}`}>
+            <Button variant="primary" label="see product" />
+          </Link>
         </div>
       </div>
     </div>
