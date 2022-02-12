@@ -7,14 +7,13 @@ import About from "../../components/about/About";
 import Categories from "../../components/categories/Categories";
 import PreviousButton from "../../components/shared/pageNav/PreviousButton";
 import Button from "../../components/shared/buttons/Button";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Suggestions from "../../components/suggestions/Suggestions";
 import Counter from "../../components/shared/buttons/counter/Counter";
 import GalleryImages from "../../components/galleryImages/GalleryImages";
 
 function ProductDetail() {
   let { slug } = useParams();
-  // const navigator = useNavigate();
 
   const [selected, setSelected] = useState(null);
 
@@ -22,7 +21,7 @@ function ProductDetail() {
     axios("/data.json").then((res) => {
       setSelected(res.data.find((product) => product.slug === slug));
     });
-  }, []);
+  }, [slug]);
 
   var boxItems = selected?.includes;
 

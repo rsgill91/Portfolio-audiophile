@@ -7,10 +7,8 @@ function PreviousButton() {
   const navigate = useNavigate();
 
   return (
-    <div className="main-wrapper-previous">
-      <Link to={() => navigate(-1)}>
-        <Typo variant="body">Go Back</Typo>
-      </Link>
+    <div className="main-wrapper-previous" onClick={""}>
+      <Typo variant="body">Go Back</Typo>
     </div>
   );
 }

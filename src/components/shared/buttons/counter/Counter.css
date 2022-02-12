@@ -7,7 +7,6 @@
 }
 
 .decrease {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +15,6 @@
 }
 
 .current-count {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +23,6 @@
 }
 
 .increase {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -113,6 +113,9 @@
     justify-content: flex-start;
     margin-top: 10%;
   }
+  .full-text {
+    width: 100%;
+  }
   .full-name {
     width: 85%;
   }
