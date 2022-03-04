@@ -48,10 +48,6 @@
   border: none;
   outline: none;
 }
-.m-btn-shop :hover {
-  color: var(--darkCopper);
-  cursor: pointer;
-}
 
 @media (hover: hover) {
   .m-btn-primary:hover {
@@ -68,6 +64,10 @@
     background-color: var(--deepBlack);
     color: white;
     opacity: 0.5;
+    cursor: pointer;
+  }
+  .m-btn-shop:hover {
+    color: var(--darkCopper);
     cursor: pointer;
   }
 }

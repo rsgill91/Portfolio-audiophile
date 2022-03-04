@@ -1,0 +1,28 @@
+.main-wrapper-counter {
+  height: 48px;
+  width: 120px;
+  background-color: var(--lightGray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .current-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+  }
+}

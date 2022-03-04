@@ -41,13 +41,13 @@ function Navbar() {
             <Link className="links-nav" to="">
               <Typo variant="subtitle">home</Typo>
             </Link>
-            <Link className="links-nav" to="/headphones">
+            <Link className="links-nav" to="/categories/headphones">
               <Typo variant="subtitle">headphones</Typo>
             </Link>
-            <Link className="links-nav" to="/speakers">
+            <Link className="links-nav" to="/categories/speakers">
               <Typo variant="subtitle">speakers</Typo>
             </Link>
-            <Link className="links-nav" to="/earphones">
+            <Link className="links-nav" to="/categories/earphones">
               <Typo variant="subtitle">earphones</Typo>
             </Link>
           </div>

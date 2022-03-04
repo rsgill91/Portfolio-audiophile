@@ -15,13 +15,13 @@ function Counter() {
 
   return (
     <div className="main-wrapper-counter">
-      <div className="decrease" onClick={decrement}>
+      <div className="controls" onClick={decrement}>
         <Typo variant="body-opacity">-</Typo>
       </div>
       <div className="current-count">
         <Typo variant="body">{count}</Typo>
       </div>
-      <div className="increase" onClick={() => setCount(count + 1)}>
+      <div className="controls" onClick={() => setCount(count + 1)}>
         <Typo variant="body-opacity">+</Typo>
       </div>
     </div>

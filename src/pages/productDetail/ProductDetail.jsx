@@ -1,4 +1,4 @@
-import { Container, Skeleton } from "@mui/material";
+import { Container, Skeleton, Grid } from "@mui/material";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./ProductDetail.css";
@@ -23,12 +23,16 @@ function ProductDetail() {
     });
   }, [slug]);
 
+  console.log(slug);
+
   var boxItems = selected?.includes;
 
   return (
     <div className="parent-wrapper-info">
       <Container>
-        <PreviousButton />
+        <Grid container mt={5}>
+          <PreviousButton />
+        </Grid>
         {selected ? (
           <div className="selected-product">
             <div className="info-card">
